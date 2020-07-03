@@ -1,0 +1,15 @@
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\obj\Debug\GTA.Common.csprojAssemblyReference.cache
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\obj\Debug\GTA.Common.csproj.CoreCompileInputs.cache
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\GTA.Common.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\GTA.Common.pdb
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\CitizenFX.Core.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\System.Collections.Immutable.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\MsgPack.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\CitizenFX.Core.pdb
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\CitizenFX.Core.xml
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\bin\Debug\MsgPack.xml
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\obj\Debug\GTA.Common.csproj.CopyComplete
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\obj\Debug\GTA.Common.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Common\obj\Debug\GTA.Common.pdb

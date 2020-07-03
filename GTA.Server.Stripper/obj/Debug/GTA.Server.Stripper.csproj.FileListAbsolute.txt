@@ -11,6 +11,5 @@ C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper
 C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\obj\Debug\GTA.Server.Stripper.csproj.CopyComplete
 C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\obj\Debug\GTA.Server.Stripper.net.dll
 C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\obj\Debug\GTA.Server.Stripper.net.pdb
-C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\bin\Debug\Resources\Config.json
-C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\bin\Debug\GTA.Client.Stripper.net.dll
-C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\bin\Debug\GTA.Client.Stripper.net.pdb
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\bin\Debug\GTA.Common.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Server.Stripper\bin\Debug\GTA.Common.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CitizenFX.Core;
-using GTA.Client.Stripper.Models;
+using GTA.Server.Stripper.Models;
 using static CitizenFX.Core.Native.API;
 
 namespace GTA.Client.Stripper.Services

@@ -14,3 +14,5 @@ C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper
 C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.net.dll
 C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.net.pdb
 C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\Resources\Config.json
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\GTA.Common.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\GTA.Common.pdb

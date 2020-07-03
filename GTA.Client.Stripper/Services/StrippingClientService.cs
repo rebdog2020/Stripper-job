@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CitizenFX.Core;
 using CitizenFX.Core.Native;
-using GTA.Client.Stripper.Models;
+using GTA.Server.Stripper.Models;
 using Newtonsoft.Json;
 using static CitizenFX.Core.Native.API;
 
