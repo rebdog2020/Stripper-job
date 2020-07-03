@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\AnimationFactory.cs" />
+    <Compile Include="Factory\IAnimationFactory.cs" />
+    <Compile Include="Models\Animation.cs" />
+    <Compile Include="Models\AnimationDictionary.cs" />
     <Compile Include="Models\Config.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ConfigService.cs" />

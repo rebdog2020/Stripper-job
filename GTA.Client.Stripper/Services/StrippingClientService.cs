@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CitizenFX.Core;
 using CitizenFX.Core.Native;
+using GTA.Common.Factory;
+using GTA.Common.Models;
 using GTA.Server.Stripper.Models;
 using Newtonsoft.Json;
 using static CitizenFX.Core.Native.API;
@@ -16,11 +18,18 @@ namespace GTA.Client.Stripper.Services
         private Config _config;
         private bool _isStripping = false;
         private DateTime _payDay;
+        private IAnimationFactory _animationFactory;
+        private DateTime _animationSwitch;
+        private Animation randomAnimation;
+        private AnimationDictionary animationDictionary;
+        private bool isNearStrippingSpot = false;
         public StrippingClientService()
         {
             try
             {
                 _config = ConfigService.LoadConfig<Config>("GTA.Client.Stripper", "Config.json", "CLIENTSTRIPPER");
+                //TODO implement IOC
+                _animationFactory = new AnimationFactory(_config);
 
                 if (_config.Debug)
                 {
@@ -41,7 +50,16 @@ namespace GTA.Client.Stripper.Services
         {
             if (IsPedNearStrippingLocation())
             {
-                _isStripping = IsEntityPlayingAnim(GetPlayerPed(-1), "mini@strip_club@private_dance@part2", "priv_dance_p2", 3);
+
+                if (Game.IsControlJustPressed(0, Control.Pickup) || Game.IsControlJustPressed(0, Control.Context) && !_isStripping)
+                {
+                    _payDay = DateTime.Now.AddSeconds(_config.TimeBetweenTick);
+                    _animationSwitch = DateTime.Now.AddSeconds(_config.AnimationSwitch);
+                    _isStripping = true;
+                    await PlayEmote();
+                }
+                // check animation still playing
+                _isStripping = IsEntityPlayingAnim(GetPlayerPed(-1), animationDictionary?.DictionaryName, randomAnimation?.AnimationName, 3);
                 if (_isStripping)
                 {
                     if (DateTime.Now >= _payDay)
@@ -53,11 +71,6 @@ namespace GTA.Client.Stripper.Services
                         _payDay = DateTime.Now.AddSeconds(_config.TimeBetweenTick);
                     }
                 }
-                if (Game.IsControlJustPressed(0, Control.Pickup) || Game.IsControlJustPressed(0, Control.Context))
-                {
-                    _payDay = DateTime.Now.AddSeconds(_config.TimeBetweenTick);
-                    await PlayEmote();
-                }
             }
 
         }
@@ -67,25 +80,36 @@ namespace GTA.Client.Stripper.Services
             var playerLoc = Game.PlayerPed.Position;
             foreach (var strippingLoc in _config.StrippingLocations)
             {
-                if (GetDistanceBetweenCoords(playerLoc.X, playerLoc.Y, playerLoc.Z, strippingLoc.X, strippingLoc.Y, strippingLoc.Z, false) <= 3)
+                if (GetDistanceBetweenCoords(playerLoc.X, playerLoc.Y, playerLoc.Z, strippingLoc.X, strippingLoc.Y, strippingLoc.Z, false) <= 1)
                 {
+                    if (!isNearStrippingSpot)
+                    {
+                        EsxService.ESX.ShowNotification($"Press 'E' to start stripping");
+                        isNearStrippingSpot = true;
+                    }
+                    
                     return true;
                 }
             }
 
+            isNearStrippingSpot = false;
             return false;
         }
 
         async Task PlayEmote()
         {
-            while (!HasAnimDictLoaded("mini@strip_club@private_dance@part2"))
+            animationDictionary = (_config.Animations.ToArray()[new Random().Next(0, _config.Animations.Count - 1)]);
+            while (!HasAnimDictLoaded(animationDictionary.DictionaryName))
             {
-                RequestAnimDict("mini@strip_club@private_dance@part2");
+                RequestAnimDict(animationDictionary.DictionaryName);
                 await Delay(10);
             }
 
-            TaskPlayAnim(GetPlayerPed(-1), "mini@strip_club@private_dance@part2", "priv_dance_p2", 2.0F, 2.0F, -1, 1, 0,
+            randomAnimation = animationDictionary.Animations.ToArray()[new Random().Next(0, _config.Animations.Count - 1)];
+            Debug.WriteLine($"Playing animation : {randomAnimation.AnimationName}");
+            TaskPlayAnim(GetPlayerPed(-1), animationDictionary.DictionaryName, randomAnimation.AnimationName, 2.0F, 2.0F, -1, 1, 0,
                 false, false, false);
         }
+
     }
 }

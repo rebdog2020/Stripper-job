@@ -6,7 +6,34 @@
     {
       "X": "114.5",
       "Y": "-1300",
-      "Z": "28.8" 
+      "Z": "28.8"
     }
-  ]
+  ],
+  "AnimationSwitch": "10", 
+  "Animations": [
+    {
+      "DictionaryName": "mini@strip_club@private_dance@part2",
+      "Animations": [
+        {
+          "AnimationName": "priv_dance_p2"
+        }
+      ]
+    },
+    {
+      "DictionaryName": "mini@strip_club@private_dance@part1",
+      "Animations": [
+        {
+          "AnimationName": "priv_dance_p1"
+        }
+      ]
+    },
+    {
+      "DictionaryName": "mini@strip_club@private_dance@part3",
+      "Animations": [
+        {
+          "AnimationName": "priv_dance_p3"
+        }
+      ]
+    }
+  ] 
 }
