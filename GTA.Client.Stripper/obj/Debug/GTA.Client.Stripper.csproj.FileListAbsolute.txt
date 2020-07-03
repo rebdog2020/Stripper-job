@@ -1,0 +1,16 @@
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\GTA.Client.Stripper.net.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\GTA.Client.Stripper.net.pdb
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\CitizenFX.Core.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\System.Collections.Immutable.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\MsgPack.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\CitizenFX.Core.pdb
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\CitizenFX.Core.xml
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\MsgPack.xml
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.csprojAssemblyReference.cache
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.csproj.CoreCompileInputs.cache
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.csproj.CopyComplete
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.net.dll
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\obj\Debug\GTA.Client.Stripper.net.pdb
+C:\Users\TheGreatKingRebdog\source\repos\GTA.Client.Stripper\GTA.Client.Stripper\bin\Debug\Resources\Config.json
